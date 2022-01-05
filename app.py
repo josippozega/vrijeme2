@@ -34,7 +34,7 @@ def getweather(city):
 
 #funkcija za dohvaćanje podataka unazad 5 dana
 def get_hist_data(lat,lon,start):
-    res = requests.get(url_1.format(lat,lon,start,8a3c08e182bbee243d335c7316fa9d26))
+    res = requests.get(url_1.format(lat,lon,start,api_key))
     data = res.json()
     temp = []
     for hour in data["hourly"]:
