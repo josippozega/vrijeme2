@@ -4,18 +4,13 @@ import requests
 from datetime import datetime, timedata
 import pandas as pd
 
-
-
-
-
-
 #API_key
 #8a3c08e182bbee243d335c7316fa9d26
 
 
 #API poziv sa OPEN WEATHER web-stranice
-url = api.openweathermap.org/data/2.5/weather?q={city name}&appid={'8a3c08e182bbee243d335c7316fa9d26'}
-https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={'8a3c08e182bbee243d335c7316fa9d26'}
+url = 'http = api.openweathermap.org/data/2.5/weather?q={city name}&appid={'8a3c08e182bbee243d335c7316fa9d26'}'
+url_1 = 'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={'8a3c08e182bbee243d335c7316fa9d26'}'
 
 #funkcija za dohvaćanje TRENITNE PROGNOZE VREMENA
 def getweather(city):
