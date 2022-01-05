@@ -6,7 +6,7 @@ import pandas as pd
 
 #API_key
 #8a3c08e182bbee243d335c7316fa9d26
-api_key =  st.("api_key")
+api_key = 0x8a3c08e182bbee243d335c7316fa9d26
 
 #API poziv sa OPEN WEATHER web-stranice
 url = 'http = api.openweathermap.org/data/2.5/weather?q={city name}&appid={api_key}'
