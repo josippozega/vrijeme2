@@ -1,7 +1,7 @@
 # Moduli
 import streamlit as st
 import requests
-from datetime import datetime, timedata
+#from datetime import datetime, timedata
 import pandas as pd
 
 #API_key
