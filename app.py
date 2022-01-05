@@ -6,15 +6,15 @@ import pandas as pd
 
 #API_key
 #8a3c08e182bbee243d335c7316fa9d26
-
+api_key = 8a3c08e182bbee243d335c7316fa9d26
 
 #API poziv sa OPEN WEATHER web-stranice
-url = 'http = api.openweathermap.org/data/2.5/weather?q={city name}&appid={8a3c08e182bbee243d335c7316fa9d26}'
-url_1 = 'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={8a3c08e182bbee243d335c7316fa9d26}'
+url = 'http = api.openweathermap.org/data/2.5/weather?q={city name}&appid={api_key}'
+url_1 = 'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={api_key}'
 
 #funkcija za dohvaćanje TRENITNE PROGNOZE VREMENA
 def getweather(city):
-    result = requests.get(url.format(city, '8a3c08e182bbee243d335c7316fa9d26'))
+    result = requests.get(url.format(city, api_key))
     if result:
         json = result.json()
         #st.write(json)
